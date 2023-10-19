@@ -16,7 +16,6 @@ body {
     align-items: center;
     min-height: 100vh;
     background-color: #e6eaf8;
-
 }
 
 .container {
@@ -79,13 +78,13 @@ i {
     background:#76a4e8;
 }
 
-.information-users {
+.information-user {
     display: flex;
 }
 
 .user-card {
     display: flex;
-    width: 327px;
+    min-width: 327px;
     height: 208px;
     padding: 24px;
     align-items: flex-start;
@@ -93,26 +92,36 @@ i {
     border-radius: 16px;
     background: #FBFCFF;
     margin-right: 16px;
+    border: none;
+    border-radius: 16px;
 }
 
-#img1 {
+.information-user .user-card:hover {
+    border-radius: 16px;
+    border: 1px solid #BFC8E5;
+    background: #FBFCFF;
+    box-shadow: 0px 8px 23px 0px rgba(218, 224, 249, 0.70);
+}
+
+.user-card img {
     width: 97px;
     height: 97px;
     flex-shrink: 0;
     border-radius: 97px;
-    background: url(<path-to-image>), lightgray -61.055px -68.636px / 207.216% 259.021% no-repeat;  
+    background: url(<path-to-image>), lightgray -61.055px -68.636px / 207.216% 259.021% no-repeat;
 }
 
-.information {
+.in4 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 16px;
     width: 131px;
     height: 132px;
+    transform: translate(-5%, 20%);
 }
 
-.name {
+.in4 .name {
     color: var(--151-b-32, #151B32);
     font-family: Merriweather;
     font-size: 18px;
@@ -121,7 +130,7 @@ i {
     line-height: normal;
 }
 
-.location {
+.in4 .location {
     color: var(--151-b-32, #151B32);
     font-family: Poppins;
     font-size: 14px;
@@ -131,13 +140,11 @@ i {
 }
 
 .favorite {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
     gap: 4px;
 }
 
-.favorite li {
+.favorite span {
+    display: inline;
     color: #516FD4;
     font-family: Poppins;
     font-size: 12px;
@@ -154,10 +161,4 @@ i {
     text-align: center;
 }
 
-#img2 {
-    width: 97px;
-    height: 97px;
-    flex-shrink: 0;
-    border-radius: 97px;
-    background: url(<path-to-image>), lightgray -61.055px -68.636px / 207.216% 259.021% no-repeat;  
-}
+
